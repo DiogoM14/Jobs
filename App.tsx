@@ -10,6 +10,7 @@ import {
 } from '@expo-google-fonts/roboto';
 
 import AppStack from './src/Router/AppStack';
+import AuthPage from './src/Components/AuthPage';
 
 const App: React.FC = () => {
   const [fontsLoaded] = useFonts({
@@ -23,7 +24,8 @@ const App: React.FC = () => {
   }
   return (
     <>
-      <AppStack />
+      {/* <AppStack /> */}
+      <AuthPage />
       <StatusBar style="light" />
     </>
   );
