@@ -10,6 +10,7 @@ import {
   SecondaryBackground,
   Title,
 } from './styles';
+import Input from '../../Components/Input';
 
 const LoginPage: React.FC = () => {
   // const goToBack = navigation;
@@ -30,6 +31,8 @@ const LoginPage: React.FC = () => {
 
       <SecondaryBackground>
         <Title>Bem vindo ao Jobs</Title>
+
+        <Input name="user" placeholder="Nome de Utilizador" />
       </SecondaryBackground>
     </Container>
   );

@@ -43,6 +43,7 @@
     "@typescript-eslint/camelcase": "off",
     "react/style-prop-object": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
+    "import/no-extraneous-dependencies": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
