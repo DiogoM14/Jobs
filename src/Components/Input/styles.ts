@@ -1,7 +1,13 @@
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
 import { Feather } from '@expo/vector-icons';
 
-export const Container = styled.View`
+interface ContainerProps {
+  isFocused: boolean;
+}
+
+export const Container = styled.View``;
+
+export const InputContent = styled.View<ContainerProps>`
   width: 300px;
   height: 60px;
   margin-top: 50px;
@@ -18,6 +24,18 @@ export const InputComponent = styled.TextInput`
 `;
 
 export const Icon = styled(Feather)`
-  color: #4f4f4f;
   margin: 0 10px;
+`;
+
+export const UnderlineOnFocus = styled.View<ContainerProps>`
+  width: 250px;
+  height: 1px;
+  background: #1458f0;
+  opacity: 0;
+  left: 25px
+    ${props =>
+      props.isFocused &&
+      css`
+        opacity: 1;
+      `};
 `;

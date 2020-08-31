@@ -1,12 +1,7 @@
 import React from 'react';
-import { useNavigation } from '@react-navigation/native';
 
-import { Feather } from '@expo/vector-icons';
 import {
   Container,
-  GoBackButton,
-  GoBackText,
-  GoBackContainer,
   SecondaryBackground,
   Title,
   Separator,
@@ -23,23 +18,12 @@ import NextButton from '../../Components/NextButton';
 
 import Facebook from '../../assets/icons/facebook.png';
 import Google from '../../assets/icons/google.png';
+import GoBack from '../../Components/GoBack';
 
 const LoginPage: React.FC = () => {
-  // const goToBack = navigation;
-  const { navigate } = useNavigation();
-
-  function handleNavigate() {
-    navigate('Landing');
-  }
   return (
     <Container>
-      <GoBackContainer>
-        <GoBackButton onPress={handleNavigate}>
-          <Feather name="arrow-left" color="#1458E0" size={20} />
-
-          <GoBackText>Voltar</GoBackText>
-        </GoBackButton>
-      </GoBackContainer>
+      <GoBack />
 
       <SecondaryBackground>
         <Title>Bem vindo ao Jobs</Title>
