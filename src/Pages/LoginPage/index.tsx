@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { useNavigation } from '@react-navigation/native';
 import {
   Container,
   SecondaryBackground,
@@ -11,6 +12,7 @@ import {
   RegisterText,
   FacebookButton,
   GoogleButton,
+  RegisterTextContainer,
 } from './styles';
 
 import Input from '../../Components/Input';
@@ -21,6 +23,11 @@ import Google from '../../assets/icons/google.png';
 import GoBack from '../../Components/GoBack';
 
 const LoginPage: React.FC = () => {
+  const { navigate } = useNavigation();
+
+  function handleNavigateToRegister() {
+    navigate('Home');
+  }
   return (
     <Container>
       <GoBack />
@@ -40,7 +47,9 @@ const LoginPage: React.FC = () => {
 
         <Separator />
 
-        <Register>Regista-te na nossa plataforma</Register>
+        <RegisterTextContainer onPress={handleNavigateToRegister}>
+          <Register>Regista-te na nossa plataforma</Register>
+        </RegisterTextContainer>
         <IconContainer>
           <FacebookButton>
             <Icon source={Facebook} />

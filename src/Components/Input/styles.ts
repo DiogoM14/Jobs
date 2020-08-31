@@ -20,16 +20,18 @@ export const InputContent = styled.View<ContainerProps>`
 
 export const InputComponent = styled.TextInput`
   color: #4f4f4f;
+  font-family: Roboto_400Regular;
   font-size: 16px;
 `;
 
 export const Icon = styled(Feather)`
-  margin: 0 10px;
+  margin: 0 12px;
 `;
 
 export const UnderlineOnFocus = styled.View<ContainerProps>`
   width: 250px;
   height: 1px;
+  bottom: 1px;
   background: #1458f0;
   opacity: 0;
   left: 25px
@@ -38,4 +40,8 @@ export const UnderlineOnFocus = styled.View<ContainerProps>`
       css`
         opacity: 1;
       `};
+`;
+
+export const UnderlineOnFocusSmall = styled(UnderlineOnFocus)`
+  width: 150px;
 `;

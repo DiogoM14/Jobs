@@ -22,7 +22,7 @@ const LandingPage: React.FC = () => {
       <Image source={LandingBackground} />
 
       <LandingText>
-        Estas desempregado e à procura de trabalho? Não te preocupes vamos
+        Estas desempregado e à procura de trabalho? Não te preocupes, vamos
         começar.
       </LandingText>
 

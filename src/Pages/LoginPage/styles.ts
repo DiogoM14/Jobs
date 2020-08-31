@@ -32,8 +32,11 @@ export const Separator = styled.View`
   background: #4f4f4f;
 `;
 
-export const Register = styled.Text`
+export const RegisterTextContainer = styled(BorderlessButton)`
   margin-top: 30px;
+`;
+
+export const Register = styled.Text`
   font-family: Roboto_400Regular;
   color: #4f4f4f;
   font-size: 16px;
