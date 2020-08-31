@@ -11,7 +11,7 @@ export const Button = styled(RectButton)`
   width: 250px;
   height: 60px;
   border-radius: 8px;
-  background: #fff;
+  background: #1458e0;
 
   margin-top: 50px;
   align-items: center;
@@ -19,7 +19,7 @@ export const Button = styled(RectButton)`
 `;
 
 export const ButtonText = styled.Text`
-  color: #1458e0;
+  color: #fff;
   font-family: Roboto_700Bold;
   font-size: 21px;
 `;

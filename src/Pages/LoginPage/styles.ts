@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { BorderlessButton } from 'react-native-gesture-handler';
+import { BorderlessButton, RectButton } from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   flex: 1;
@@ -40,4 +40,40 @@ export const Title = styled.Text`
   font-family: Roboto_700Bold;
   text-align: center;
   max-width: 165px;
+  margin-top: 62px;
 `;
+
+export const Separator = styled.View`
+  width: 280px;
+  height: 1px;
+  margin-top: 35px;
+  background: #4f4f4f;
+`;
+
+export const Register = styled.Text`
+  margin-top: 30px;
+  font-family: Roboto_400Regular;
+  color: #4f4f4f;
+  font-size: 16px;
+  text-decoration: underline;
+`;
+
+export const IconContainer = styled.View`
+  width: 150px;
+  margin-top: 38px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const Icon = styled.Image``;
+
+export const RegisterText = styled.Text`
+  font-family: Roboto_400Regular;
+  font-size: 16px;
+  color: #4f4f4f;
+`;
+
+export const FacebookButton = styled(RectButton)``;
+
+export const GoogleButton = styled(RectButton)``;
