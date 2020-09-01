@@ -1,13 +1,13 @@
 import React from 'react';
-import { Text } from 'react-native';
 
 import { Container } from './styles';
+import RegisterPageComponent from '../../Components/RegisterPageComponent';
 
 const RegisterPage: React.FC = () => {
   return (
-    <Container>
-      <Text>RegisterPage</Text>
-    </Container>
+    <>
+      <RegisterPageComponent />
+    </>
   );
 };
 
