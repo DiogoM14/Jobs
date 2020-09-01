@@ -26,7 +26,7 @@ const LoginPage: React.FC = () => {
   const { navigate } = useNavigation();
 
   function handleNavigateToRegister() {
-    navigate('Home');
+    navigate('Register');
   }
   return (
     <Container>

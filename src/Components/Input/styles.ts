@@ -34,12 +34,13 @@ export const UnderlineOnFocus = styled.View<ContainerProps>`
   bottom: 1px;
   background: #1458f0;
   opacity: 0;
-  left: 25px
-    ${props =>
-      props.isFocused &&
-      css`
-        opacity: 1;
-      `};
+  left: 25px;
+
+  ${props =>
+    props.isFocused &&
+    css`
+      opacity: 1;
+    `};
 `;
 
 export const UnderlineOnFocusSmall = styled(UnderlineOnFocus)`
